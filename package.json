@@ -15,7 +15,8 @@
     "build": "rollup -c build/rollup.js",
     "docs": "node-sass docs/assets/scss -o docs/assets/css -w docs/assets/scss/**/*.scss & docsify serve docs",
     "test": "jest tests/ --verbose",
-    "test:types": "tsc -p types/test"
+    "test:types": "tsc -p types/test",
+    "prepare": "npm run build"
   },
   "author": "Dave Stewart <dave@davestewart.io>",
   "homepage": "https://github.com/davestewart/vuex-pathify#readme",
